@@ -8,7 +8,7 @@ public class Main {
     while (true) {
         System.out.println("Выберете номер задачи, которую хотите решить");
         System.out.println("1 - калькулятор");
-        System.out.println("2 - задача2");
+        System.out.println("2 - таблица умножения");
         System.out.println("3 - задача3");
         System.out.println("4 - задача4");
         System.out.println("0 - завершить");
@@ -49,6 +49,8 @@ public class Main {
 
             break;
             case 2: System.out.println("2");
+            MultiplicationTable mt = new MultiplicationTable();
+            mt.multiplicationTablr();
             break;
             case 3: System.out.println("3");
             break;
