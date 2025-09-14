@@ -10,13 +10,8 @@ public class MaxOfThree {
 
         int max = a;
         if (b > max) max = b;
-        if (c > max) max = b;
+        if (c > max) max = c;
 
         System.out.println("Максимальное число: " + max);
-        if ((a == b && b == c)) {
-            System.out.println("Все три числа равны.");
-        } else if ((a == b && a == max) || (b == c && b == max) || (a == c && a == max)) {
-            System.out.println("Есть равные максимальные числа.");
-        }
     }
 }
