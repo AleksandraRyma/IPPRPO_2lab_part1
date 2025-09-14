@@ -10,7 +10,7 @@ public class Main {
         System.out.println("1 - калькулятор");
         System.out.println("2 - таблица умножения");
         System.out.println("3 - генерация 5-ти случайных чисел");
-        System.out.println("4 - задача4");
+        System.out.println("4 - поиск максимального числа");
         System.out.println("0 - завершить");
         choice = sc.nextInt();
         switch (choice) {
@@ -48,7 +48,7 @@ public class Main {
                 System.out.println("Ответ: " + result);
 
             break;
-            case 2: 
+            case 2:
             MultiplicationTable mt = new MultiplicationTable();
             mt.multiplicationTablr();
             break;
@@ -56,7 +56,9 @@ public class Main {
                 RandomGeneration rg = new RandomGeneration();
                 rg.generate();
             break;
-            case 4: System.out.println("4");
+            case 4:
+                MaxOfThree maxNum = new MaxOfThree();
+                maxNum.maxNumber();
             break;
             case 0:
                 return;
