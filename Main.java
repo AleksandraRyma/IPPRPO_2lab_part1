@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
     int choice;
     Scanner sc = new Scanner(System.in);
-    System.out.println("Изменение из вветки maxThree");
+    System.out.println("Изменение из ветки maxThree");
     while (true) {
         System.out.println("Выберете номер задачи, которую хотите решить");
         System.out.println("1 - калькулятор");
