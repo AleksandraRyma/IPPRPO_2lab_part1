@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Выберете номер задачи, которую хотите решить");
         System.out.println("1 - калькулятор");
         System.out.println("2 - таблица умножения");
-        System.out.println("3 - задача3");
+        System.out.println("3 - генерация 5-ти случайных чисел");
         System.out.println("4 - задача4");
         System.out.println("0 - завершить");
         choice = sc.nextInt();
@@ -48,11 +48,13 @@ public class Main {
                 System.out.println("Ответ: " + result);
 
             break;
-            case 2: System.out.println("2");
+            case 2: 
             MultiplicationTable mt = new MultiplicationTable();
             mt.multiplicationTablr();
             break;
-            case 3: System.out.println("3");
+            case 3:
+                RandomGeneration rg = new RandomGeneration();
+                rg.generate();
             break;
             case 4: System.out.println("4");
             break;
